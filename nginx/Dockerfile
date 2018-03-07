@@ -20,6 +20,7 @@ RUN chown -R www:www /data/www
 RUN chown -R www:www /var/lib/nginx
 RUN mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.orig
 ADD nginx.conf /etc/nginx/nginx.conf
+ADD index.html /data/www/index.html 
 # COPY nginx.conf /etc/nginx/nginx.conf
 COPY conf.d /etc/nginx/conf.d
 
