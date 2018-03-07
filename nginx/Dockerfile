@@ -15,7 +15,7 @@ RUN apk add nginx
 RUN adduser -D -g 'www' www
 
 # config nginx
-RUN mkdir /data/www
+RUN mkdir -p /data/www
 RUN chown -R www:www /data/www
 RUN chown -R www:www /var/lib/nginx
 RUN mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.orig
