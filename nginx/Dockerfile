@@ -2,7 +2,7 @@
 #FROM alpine:latest
 FROM shaonbean/alpine
 
-MAINTAINER shaonbean yunwei@aniu.tv
+LABEL maintainer="Nginx Docker Maintainers shaonbean yunwei@aniu.tv"
 
 # ENV NGINX_VERSION 1.12.2
 
@@ -17,7 +17,7 @@ RUN apk add nginx
 
 # config nginx
 #RUN mkdir /run/nginx
-RUN mkdir -p /www
+#RUN mkdir -p /www
 #RUN chown -R www:www /data/www
 #RUN chown -R www:www /var/lib/nginx
 #RUN mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.orig
