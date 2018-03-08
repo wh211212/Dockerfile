@@ -9,3 +9,6 @@ sudo docker stop $containerid
 sudo docker rm $containerid
 
 sudo docker rmi  aniu/nginx
+
+# build nginx images
+docker build -t aniu/nginx .

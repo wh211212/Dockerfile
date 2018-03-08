@@ -1,6 +1,6 @@
 # Based on Alpine Linux latest version
 #FROM alpine:latest
-FROM shaonbean/alpine
+FROM shaonbean/alpine:3.7
 
 LABEL maintainer="Nginx Docker Maintainers shaonbean yunwei@aniu.tv"
 
